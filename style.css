@@ -223,49 +223,55 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1px;
+  gap: 5px;
   position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
+  padding-left: 10px;
 }
 
 .iphone .frame-4 {
-  display: inline-flex;
+  display: flex;
   height: 20px;
   align-items: flex-end;
-  gap: 10px;
+  gap: 5px;
   position: relative;
+  width: 100%;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .iphone .text-wrapper-3 {
   position: relative;
   width: fit-content;
   margin-top: -2.00px;
-  margin-left: -1.00px;
   -webkit-text-stroke: 1px #1d1d1b;
   font-family: "Adobe Handwriting-Tiffany", Helvetica;
   font-weight: 400;
   color: #1d1d1b;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0;
   line-height: normal;
+  display: inline-block;
 }
 
 .iphone .p {
   position: relative;
   width: fit-content;
-  -webkit-text-stroke: 0.5px #1d1d1b;
-  font-family: "Adobe Handwriting-Regular", Helvetica;
+  -webkit-text-stroke: 0.3px #1d1d1b;
+  font-family: "Adobe Handwriting-Tiffany", Helvetica;
   font-weight: 400;
   color: #1d1d1b;
   font-size: 12px;
   letter-spacing: 0;
   line-height: normal;
+  margin-left: 10px;
+  display: inline-block;
 }
 
 .iphone .span {
-  font-family: "Adobe Handwriting-Regular", Helvetica;
+  font-family: "Adobe Handwriting-Tiffany", Helvetica;
   font-weight: 400;
   color: #1d1d1b;
   font-size: 12px;
@@ -273,15 +279,18 @@
 }
 
 .iphone .text-wrapper-4 {
-  font-family: "Alegreya-Regular", Helvetica;
+  font-family: "Adobe Handwriting-Tiffany", Helvetica;
 }
 
 .iphone .frame-5 {
-  display: inline-flex;
+  display: flex;
   align-items: flex-end;
-  gap: 10px;
+  gap: 5px;
   position: relative;
   flex: 0 0 auto;
+  width: 100%;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .iphone .div-3 {
@@ -332,42 +341,47 @@
   font-family: "Adobe Handwriting-Tiffany", Helvetica;
   font-weight: 400;
   color: #1d1d1b;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0;
   line-height: normal;
+  margin-left: 10px;
 }
 
 .iphone .text-wrapper-6 {
   margin-top: -2.00px;
-  margin-left: -1.00px;
   -webkit-text-stroke: 1px #1d1d1b;
   font-family: "Adobe Handwriting-Tiffany", Helvetica;
   color: #1d1b1b;
-  font-size: 14px;
+  font-size: 15px;
   position: relative;
   width: fit-content;
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
+  display: inline-block;
 }
 
 .iphone .frame-6 {
   display: flex;
   height: 20px;
   align-items: flex-end;
-  gap: 10px;
+  gap: 5px;
   position: relative;
   align-self: stretch;
   width: 100%;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .iphone .frame-7 {
   display: flex;
   width: 129px;
   align-items: flex-end;
-  gap: 10px;
+  gap: 5px;
   position: relative;
   flex: 0 0 auto;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .iphone .testo-4 {
@@ -382,23 +396,24 @@
   position: relative;
   width: fit-content;
   margin-top: -2.00px;
-  margin-left: -1.00px;
   margin-right: -31.00px;
   -webkit-text-stroke: 1px #1d1d1b;
   font-family: "Adobe Handwriting-Tiffany", Helvetica;
   font-weight: 400;
   color: #1d1d1b;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0;
   line-height: normal;
+  display: inline-block;
 }
 
 .iphone .DOUBLE-IPA {
   margin-right: -117.00px;
+  margin-left: 10px;
   position: relative;
   width: fit-content;
   -webkit-text-stroke: 0.5px #1d1d1b;
-  font-family: "Adobe Handwriting-Regular", Helvetica;
+  font-family: "Adobe Handwriting-Tiffany", Helvetica;
   font-weight: 400;
   color: #1d1d1b;
   font-size: 12px;
@@ -416,10 +431,11 @@
 
 .iphone .WEST-COAST-IPA {
   margin-right: -38.00px;
+  margin-left: 10px;
   -webkit-text-stroke: 0.5px #1d1d1b;
-  font-family: "Adobe Handwriting-Regular", Helvetica;
+  font-family: "Adobe Handwriting-Tiffany", Helvetica;
   color: #1d1d1b;
-  font-size: 12px;
+  font-size: 10px;
   position: relative;
   width: fit-content;
   font-weight: 400;
@@ -447,48 +463,52 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 2px;
+  gap: 5px;
   position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
+  padding-left: 10px;
 }
 
 .iphone .frame-9 {
   display: flex;
   height: 19px;
   align-items: flex-end;
-  gap: 10px;
+  gap: 5px;
   position: relative;
   align-self: stretch;
   width: 100%;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .iphone .text-wrapper-7 {
   position: relative;
   width: 74px;
   height: 12px;
-  margin-left: -1.00px;
   -webkit-text-stroke: 1px #1d1d1b;
   font-family: "Adobe Handwriting-Tiffany", Helvetica;
   font-weight: 400;
   color: #1d1d1b;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0;
   line-height: 12px;
   white-space: nowrap;
+  display: inline-block;
 }
 
 .iphone .div-4 {
   position: relative;
   width: 259px;
   -webkit-text-stroke: 0.5px #1d1d1b;
-  font-family: "Adobe Handwriting-Regular", Helvetica;
+  font-family: "Adobe Handwriting-Tiffany", Helvetica;
   font-weight: 400;
   color: #1d1d1b;
   font-size: 12px;
   letter-spacing: -0.24px;
   line-height: 12px;
+  margin-left: 10px;
 }
 
 .iphone .text-wrapper-8 {
@@ -496,7 +516,7 @@
 }
 
 .iphone .text-wrapper-9 {
-  font-family: "Alegreya-Regular", Helvetica;
+  font-family: "Adobe Handwriting-Tiffany", Helvetica;
   letter-spacing: -0.03px;
 }
 
@@ -504,35 +524,39 @@
   display: flex;
   height: 24px;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   position: relative;
   align-self: stretch;
   width: 100%;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .iphone .text-wrapper-10 {
   position: relative;
   width: 41px;
   height: 12px;
-  margin-left: -1.00px;
   -webkit-text-stroke: 1px #1d1d1b;
   font-family: "Adobe Handwriting-Tiffany", Helvetica;
   font-weight: 400;
   color: #1d1d1b;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0;
   line-height: 12px;
   white-space: nowrap;
+  display: inline-block;
 }
 
 .iphone .frame-11 {
   display: flex;
   height: 17px;
   align-items: flex-start;
-  gap: 10px;
+  gap: 5px;
   position: relative;
   align-self: stretch;
   width: 100%;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .iphone .text-wrapper-11 {
@@ -541,14 +565,14 @@
   height: 24px;
   margin-top: -2.00px;
   margin-bottom: -5.00px;
-  margin-left: -1.00px;
   -webkit-text-stroke: 1px #1d1d1b;
   font-family: "Adobe Handwriting-Tiffany", Helvetica;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 12px;
   font-weight: 400;
   color: #1d1d1b;
   letter-spacing: 0;
+  display: inline-block;
 }
 
 .iphone .FOGLIE-DI-AGRUMI-DI {
@@ -556,8 +580,9 @@
   width: 259px;
   margin-top: -2.00px;
   margin-right: -11.00px;
+  margin-left: 10px;
   -webkit-text-stroke: 0.5px #1d1d1b;
-  font-family: "Adobe Handwriting-Regular", Helvetica;
+  font-family: "Adobe Handwriting-Tiffany", Helvetica;
   font-weight: 400;
   color: #1d1d1b;
   font-size: 12px;
@@ -569,21 +594,24 @@
   display: flex;
   height: 30px;
   align-items: flex-start;
-  gap: 10px;
+  gap: 5px;
   position: relative;
   align-self: stretch;
   width: 100%;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .iphone .div-5 {
   position: relative;
   width: 265px;
   margin-top: -2.00px;
+  margin-left: 10px;
   -webkit-text-stroke: 0.5px #1d1d1b;
-  font-family: "Adobe Handwriting-Regular", Helvetica;
+  font-family: "Adobe Handwriting-Tiffany", Helvetica;
   font-weight: 400;
   color: #1d1d1b;
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: -0.24px;
   line-height: 12px;
 }
@@ -592,10 +620,12 @@
   display: flex;
   height: 24px;
   align-items: flex-start;
-  gap: 10px;
+  gap: 5px;
   position: relative;
   align-self: stretch;
   width: 100%;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .iphone .text-wrapper-12 {
@@ -603,22 +633,23 @@
   width: 109px;
   height: 24px;
   margin-top: -2.00px;
-  margin-left: -1.00px;
   -webkit-text-stroke: 1px #1d1d1b;
   font-family: "Adobe Handwriting-Tiffany", Helvetica;
   font-weight: 400;
   color: #1d1d1b;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0;
   line-height: 12px;
+  display: inline-block;
 }
 
 .iphone .AGRUMI-DI-SICILIA {
   position: relative;
   width: 224px;
   margin-top: -2.00px;
+  margin-left: 10px;
   -webkit-text-stroke: 0.5px #1d1d1b;
-  font-family: "Adobe Handwriting-Regular", Helvetica;
+  font-family: "Adobe Handwriting-Tiffany", Helvetica;
   font-weight: 400;
   color: #1d1d1b;
   font-size: 12px;
@@ -789,11 +820,13 @@
 .iphone .frame-14 {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 5px;
   position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .iphone .FRUIT-BERLINER {
@@ -801,8 +834,9 @@
   width: 265px;
   margin-top: -2.00px;
   margin-right: -5.00px;
+  margin-left: 10px;
   -webkit-text-stroke: 0.5px #1d1d1b;
-  font-family: "Adobe Handwriting-Regular", Helvetica;
+  font-family: "Adobe Handwriting-Tiffany", Helvetica;
   font-weight: 400;
   color: #1d1d1b;
   font-size: 12px;
