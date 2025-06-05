@@ -2,24 +2,30 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
+  <!-- Questo meta è fondamentale per far sì che il contenuto si ridimensioni correttamente sullo schermo mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prototipo Mobile</title>
+  <title>Prototipo Mobile Full-Screen</title>
   <style>
-    /* Facoltativo: rendi il body senza margini/stili per full-screen */
+    /* 1. Fai sì che html e body occupino TUTTA l’altezza e non abbiano margini/padding */
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
     }
+
+    /* 2. Imposta l’iframe in posizione fissa, senza bordo, e occupi 100% sia in larghezza che in altezza */
     iframe {
-      border: none;
+      position: fixed;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 100vh; /* occuperà tutta l’altezza della finestra */
+      height: 100%;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <!-- Incolla qui il codice iframe che hai copiato da Figma -->
-  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/GUnlSVCTwjD4HGGx1kQuRE/Tap-List?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+  <!-- L’iframe fa il “full-screen” del prototipo Figma -->
+   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/GUnlSVCTwjD4HGGx1kQuRE/Tap-List?node-id=0-1&embed-host=share" allowfullscreen></iframe>
 </body>
 </html>
