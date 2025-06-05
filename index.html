@@ -1,31 +1,1212 @@
 <!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8" />
-  <!-- Questo meta è fondamentale per far sì che il contenuto si ridimensioni correttamente sullo schermo mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prototipo Mobile Full-Screen</title>
-  <style>
-    /* 1. Fai sì che html e body occupino TUTTA l’altezza e non abbiano margini/padding */
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-
-    /* 2. Imposta l’iframe in posizione fissa, senza bordo, e occupi 100% sia in larghezza che in altezza */
-    iframe {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
-</head>
-<body>
-  <!-- L’iframe fa il “full-screen” del prototipo Figma -->
-   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/GUnlSVCTwjD4HGGx1kQuRE/Tap-List?node-id=0-1&embed-host=share" allowfullscreen></iframe>
-</body>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="iphone">
+      <div class="overlap-wrapper">
+        <div class="overlap">
+          <div class="group">
+            <div class="overlap-group">
+              <img class="sfondo" src="img/sfondo.svg" />
+              <img class="img" src="img/sfondo-12.svg" />
+              <img class="sfondo-2" src="img/sfondo-3.svg" />
+              <img class="sfondo-3" src="img/sfondo-8.svg" />
+            </div>
+            <div class="div">
+              <img class="sfondo" src="img/sfondo-5.svg" />
+              <img class="img" src="img/sfondo-11.svg" />
+              <img class="sfondo-2" src="img/sfondo-7.svg" />
+              <img class="sfondo-3" src="img/image.svg" />
+            </div>
+            <div class="overlap-group-2">
+              <img class="sfondo" src="img/sfondo-9.svg" />
+              <img class="img" src="img/sfondo-6.svg" />
+              <img class="sfondo-2" src="img/sfondo-2.svg" />
+              <img class="sfondo-3" src="img/sfondo-10.svg" />
+            </div>
+            <img class="sfondo-4" src="img/sfondo-4.svg" />
+          </div>
+          <div class="frame">
+            <div class="TAPLIST">
+              <div class="frame-2">
+                <div class="text-wrapper">BEER BUBBLES 2025</div>
+                <img class="group-2" src="img/group-4.png" />
+              </div>
+              <p class="la-taplist-in">La taplist è in continua rotazione:<br />le birre cambiano regolarmente!</p>
+            </div>
+            <div class="BIRRIFICI">
+              <div class="div-2">
+                <div class="overlap-group-wrapper">
+                  <div class="overlap-group-3">
+                    <img class="testo" src="img/testo.svg" />
+                    <div class="text-wrapper-2">BALLARAK</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">DEBBY CALLAN</div>
+                    <p class="p"><span class="span">MÄRZEN 5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">RYE HARD</div>
+                    <p class="p"><span class="span">SEGALE NEIPA 3</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">UNNI VAIS</div>
+                    <p class="p"><span class="span">GERMAN WAIZEN 5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">ANDIAMO A BERLINO BEPPE</div>
+                    <p class="p"><span class="span">GERMAN PILS 5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">KEN SARO</div>
+                    <p class="p"><span class="span">IRISH STOUT 5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">SMOOTY AND SMOKEY</div>
+                    <p class="p"><span class="span">BOCK RAUCHBIER 6</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <p class="text-wrapper-3">INTO THE WAIZEN NEIPA 100%</p>
+                    <p class="p"><span class="span">FRUMENTO 3</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">PROGETTO Y</div>
+                    <p class="p">
+                      <span class="span">BELGIAN STRONG ALE 7</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-3">
+                <div class="div-wrapper">
+                  <div class="overlap-group-4">
+                    <img class="testo-2" src="img/testo-3.svg" />
+                    <div class="text-wrapper-2">BIRRA DEI VESPRI</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">LAVIKA</div>
+                    <p class="p"><span class="span">AMBER IPA 6</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">TRISKELE</div>
+                    <p class="p"><span class="span">GOLDEN ALE 5,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">SCISCIRÌ</div>
+                    <p class="p">
+                      <span class="span">BELGIAN STRONG ALE 8</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">MORAMORA</div>
+                    <p class="p"><span class="span">AMERICAN STOUT 7</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">ERETICA</div>
+                    <p class="p"><span class="span">SMOKED 4,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-3">
+                <div class="div-wrapper">
+                  <div class="overlap-group-4">
+                    <img class="testo-3" src="img/testo-2.svg" />
+                    <div class="text-wrapper-2">BIRRIFICIO RURALE</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">KELLERPILS</div>
+                    <p class="p"><span class="span">PILSNER 4,8</span> <span class="text-wrapper-4">%</span></p>
+                    <div class="text-wrapper-5">GLUTEN FREE</div>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">LITTLE BEAUTY</div>
+                    <p class="p"><span class="span">MICRO IPA 2</span> <span class="text-wrapper-4">%</span></p>
+                    <div class="text-wrapper-5">GLUTEN FREE</div>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-6">LITTLE FIFTEEN</div>
+                    <p class="p"><span class="span">SESSION IPA 4</span> <span class="text-wrapper-4">%</span></p>
+                    <div class="text-wrapper-5">GLUTEN FREE</div>
+                  </div>
+                  <div class="frame-6">
+                    <div class="text-wrapper-3">405040</div>
+                    <p class="p"><span class="span">ITALIAN PILS 5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-7">
+                    <div class="text-wrapper-3">SETA</div>
+                    <p class="p"><span class="span">BLANCHE 5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">SETA SPECIAL</div>
+                    <p class="p">
+                      <span class="span">BLANCHE AL BERGAMOTTO 5</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">RESET</div>
+                    <p class="p"><span class="span">AMBER ALE 5,6</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">MODERN BITTER</div>
+                    <p class="p"><span class="span">BITTER ALE 4,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">TERMINATOR</div>
+                    <p class="p"><span class="span">DOPPELBOCK 8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">B-SIDE OF THE MOON</div>
+                    <p class="p"><span class="span">BROWN ALE 4</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">EMISFERO SUD</div>
+                    <p class="p"><span class="span">PACIFIC IPA 5,7</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">JUST FOR CAN</div>
+                    <p class="p">
+                      <span class="span">AMERICAN PALE ALE 5,3</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-6">TRIPLE PEPPER</div>
+                    <p class="p">
+                      <span class="span">TRIPEL CON PEPE DELLE ANDALIMANE 8,8</span>
+                      <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-6">SWEET SIXTEEN</div>
+                    <p class="p">
+                      <span class="span">gose con passion fruit e limone</span>
+                      <span class="span"> 4,6</span>
+                      <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="overlap-group-wrapper">
+                  <div class="overlap-group-3">
+                    <img class="testo-4" src="img/testo-4.svg" />
+                    <div class="text-wrapper-2">BOIA BREWING</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">SUPPLIZIO DELLA RUOTA</div>
+                    <p class="p"><span class="span">TRIPEL 8</span> <span class="text-wrapper-4">%</span></p>
+                    <div class="text-wrapper-5">GLUTEN FREE</div>
+                  </div>
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">VERGINE DI NORIMBERGA</div>
+                    <p class="p">
+                      <span class="span">Keller Pils</span>
+                      <span class="span"> 5</span>
+                      <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-6">
+                    <div class="text-wrapper-3">CARNAGE</div>
+                    <p class="p"><span class="span">DOPPELBOCK 7,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-7">
+                    <div class="electric-shock">ELECTRIC SHOCK 380 VOLTS</div>
+                    <p class="DOUBLE-IPA">
+                      <span class="span">DOUBLE IPA 8</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">ELECTRIC SHOCK 380 VOLTS</div>
+                    <p class="p"><span class="span">SESSION IPA 4</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">CULLA DI GIUDA</div>
+                    <p class="p"><span class="span">AMERICAN IPA 6,2</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">DARK MASK</div>
+                    <p class="p"><span class="span">NITRO STOUT 4</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="div-3">
+                  <div class="div-wrapper">
+                    <div class="overlap-group-4">
+                      <img class="vector" src="img/vector-22.svg" />
+                      <div class="text-wrapper-2">BREWFIST</div>
+                    </div>
+                  </div>
+                  <div class="frame-3">
+                    <div class="frame-5">
+                      <div class="text-wrapper-3">LA BASSA</div>
+                      <p class="p"><span class="span">REAL LAGER 5,2</span> <span class="text-wrapper-4">%</span></p>
+                    </div>
+                    <div class="frame-4">
+                      <div class="text-wrapper-3">LA MOSCA</div>
+                      <p class="p">
+                        <span class="span">BLANCHE </span>
+                        <span class="span">5,2</span>
+                        <span class="text-wrapper-4">%</span>
+                      </p>
+                    </div>
+                    <div class="frame-6">
+                      <div class="text-wrapper-3">FALSE FLAT</div>
+                      <p class="p">
+                        <span class="span">berliner weisse con basilico e lampone </span>
+                        <span class="span">3,7</span>
+                        <span class="text-wrapper-4">%</span>
+                      </p>
+                    </div>
+                    <div class="frame-7">
+                      <div class="text-wrapper-3">SPACEMAN</div>
+                      <p class="WEST-COAST-IPA">
+                        <span class="span">WEST COAST IPA 7</span> <span class="text-wrapper-4">%</span>
+                      </p>
+                    </div>
+                    <div class="frame-5">
+                      <div class="text-wrapper-3">SPAGHETTI WESTERN</div>
+                      <p class="p">
+                        <span class="span">imperial chocolate&amp;coffee stout 8,7</span>
+                        <span class="text-wrapper-4">%</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="BREWFIST"></div>
+              </div>
+              <div class="div-2">
+                <div class="overlap-group-wrapper">
+                  <div class="overlap-group-3">
+                    <img class="vector-2" src="img/vector-7.svg" />
+                    <div class="text-wrapper-2">BRUNO RIBADI</div>
+                  </div>
+                </div>
+                <div class="frame-8">
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">BIANCA GLUTEN FREE</div>
+                    <p class="p"><span class="span">5,5</span> <span class="text-wrapper-4">%</span></p>
+                    <div class="text-wrapper-5">GLUTEN FREE</div>
+                  </div>
+                  <div class="frame-6">
+                    <div class="text-wrapper-3">SICILIAN PILS</div>
+                    <p class="p">
+                      <span class="span">GRANI ANTICHI SICILIANI 5</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">CA-CA-O</div>
+                    <p class="p">
+                      <span class="span">STOUT AL CIOCCOLATO DI MODICA 7,7</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">NAT-ALE</div>
+                    <p class="p">
+                      <span class="span">AL PROFUMO DI BUCCELLATO 12</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">PALERMO ALÈ</div>
+                    <p class="p">
+                      <span class="span">BIONDA AL POMPELMO ROSA 4,5</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">RED-ETNA</div>
+                    <p class="p">
+                      <span class="span">ROSSA AL FICODINDIA DELL’ETNA DOP 8</span>
+                      <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-9">
+                    <div class="text-wrapper-7">SPECIAL ALE</div>
+                    <p class="div-4">
+                      <span class="text-wrapper-8">UVA PASSA DI PANTELLERIA E CARRUBA 7</span>
+                      <span class="text-wrapper-9">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-10">
+                    <div class="text-wrapper-10">TRIPEL</div>
+                    <p class="div-4">
+                      <span class="text-wrapper-8">FICHI SECCHI E MIELE SICILIANO 9</span>
+                      <span class="text-wrapper-9">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-11">
+                    <div class="text-wrapper-11">INDIA PALE ALE</div>
+                    <p class="FOGLIE-DI-AGRUMI-DI">
+                      <span class="text-wrapper-8">FOGLIE DI AGRUMI DI SICILIA 6,5</span>
+                      <span class="text-wrapper-9">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-12">
+                    <div class="text-wrapper-3">BIANCA</div>
+                    <p class="div-5">
+                      <span class="text-wrapper-8">GRANO ‘BIANCOLILLA’ E SCORZE DI MANDARINO DI CIACULLI 5,5</span>
+                      <span class="text-wrapper-9">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-13">
+                    <div class="text-wrapper-12">SICILIAN PALE ALE</div>
+                    <p class="AGRUMI-DI-SICILIA">
+                      <span class="text-wrapper-8">AGRUMI DI SICILIA, BACCHE DI SOMMACCO E PEPE ROSA 6</span>
+                      <span class="text-wrapper-9">%</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="group-3">
+                  <div class="overlap-group-5">
+                    <img class="vector-3" src="img/vector-21.svg" />
+                    <div class="text-wrapper-2">CANEDIGUERRA</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">VIENNA LAGER</div>
+                    <p class="p"><span class="span">VIENNA LAGER 5,4</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">AMERICAN IPA</div>
+                    <p class="p"><span class="span">AMERICAN IPA 6,7</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">SUMMER ALE</div>
+                    <p class="p"><span class="span">SESSION IPA 4</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">ITALIAN PILS</div>
+                    <p class="p"><span class="span">ITALIAN PILSNER 5,2</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">OFFBEAT IPA</div>
+                    <p class="p"><span class="span">CITRON&amp;LIME 6</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">SOUR ALE</div>
+                    <p class="p"><span class="span">CATHARINA SOUR 4,1</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="overlap-group-wrapper">
+                  <div class="overlap-group-3">
+                    <img class="vector-4" src="img/vector-11.svg" />
+                    <div class="text-wrapper-2">COMPAGNIA DEL FERMENTO</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">SCHETTA</div>
+                    <p class="p"><span class="span">PILSNER 5,2</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">JANCA</div>
+                    <p class="p"><span class="span">WEISS 4,7</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">GINIUSA</div>
+                    <p class="p">
+                      <span class="span">AMERICAN PALE ALE 5,2</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">FUMUSA</div>
+                    <p class="p"><span class="span">RAUCHBIER 5,4</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">GALVARINA</div>
+                    <p class="p"><span class="span">HELLES 5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">PRIZIUSA</div>
+                    <p class="p">
+                      <span class="span">BELGIAN STRONG ALE 9,6</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">SPERTA</div>
+                    <p class="p"><span class="span">BLONDE ALE 5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">MASCARARA</div>
+                    <p class="p"><span class="span">RED ALE 6,2</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="group-3">
+                  <div class="overlap-group-5">
+                    <img class="vector-5" src="img/vector-5.svg" />
+                    <div class="text-wrapper-2">CROCE DI MALTO</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">RUS</div>
+                    <p class="p">
+                      <span class="span"> RED RICE BITTER 3,9</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                    <div class="text-wrapper-5">GLUTEN FREE</div>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">HAURIA</div>
+                    <p class="p"><span class="span">KOLSH 4,7</span> <span class="text-wrapper-4">%</span></p>
+                    <div class="text-wrapper-5">ORO A BIRRA DELL’ANNO</div>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">TRIPLEXXX</div>
+                    <p class="p">
+                      <span class="span">BELGIAN STRONG ALE 7,8</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">HELLES DIABLO</div>
+                    <p class="p">
+                      <span class="span">SMOKED CHILI HELLES 5,2</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">BAD MOTOR</div>
+                    <p class="p"><span class="span">GOSE ALLA MENTA 4,8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">UMBRÀ</div>
+                    <p class="p"><span class="span">BLANCHE 4,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">F.O.D. “COLLAB – MACONDO”</div>
+                    <p class="p"><span class="span">DDH IPA 5,7</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="group-3">
+                  <div class="overlap-group-5">
+                    <img class="vector-6" src="img/vector-12.svg" />
+                    <div class="text-wrapper-2">DANK BREWING</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">SAFE HOUSE</div>
+                    <p class="p"><span class="span">PILS 5,2</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">MANGO FRISKO</div>
+                    <p class="p"><span class="span">MANGO SOUR ALE 4,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">COAST DRIVER</div>
+                    <p class="p">
+                      <span class="span">SESSION IPA CON LIME 4,3</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">LUSIFORNIA DREAMIN</div>
+                    <p class="p"><span class="span">IPA 5,8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">DOUBLE GRAFFITI</div>
+                    <p class="p"><span class="span">DOUBLE IPA 8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">SANTA BARBARA</div>
+                    <p class="p"><span class="span">MODERN IPA 6,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">BARRIO LOGAN</div>
+                    <p class="p"><span class="span">TRIPEL 8,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="DOPPIO-MALTO">
+                <div class="group-4">
+                  <div class="overlap-group-6">
+                    <img class="vector-7" src="img/vector-9.svg" />
+                    <div class="text-wrapper-13">DOPPIO MALTO</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">SUPER CHIARA</div>
+                    <p class="p"><span class="span">LAGER 4,6</span> <span class="text-wrapper-4">%</span></p>
+                    <div class="text-wrapper-5">GLUTEN FREE</div>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">IMPERIALE</div>
+                    <p class="p">
+                      <span class="span">IMPERIAL BLACK IPA 9</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">SEXY IPA</div>
+                    <p class="p"><span class="span">IPA 6</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">ZINGI ALE</div>
+                    <p class="p"><span class="span">GINGER ALE 7</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="group-5">
+                  <div class="overlap-group-7">
+                    <img class="vector-8" src="img/vector-3.svg" />
+                    <div class="text-wrapper-14">EDIT</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">MIA</div>
+                    <p class="p"><span class="span">LAGER HELL 4,8</span> <span class="text-wrapper-4">%</span></p>
+                    <div class="text-wrapper-5">GLUTEN FREE</div>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">IPACONDA</div>
+                    <p class="p"><span class="span">AMERICAN IPA 6,6</span> <span class="text-wrapper-4">%</span></p>
+                    <div class="text-wrapper-5">GLUTEN FREE</div>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">BARTENDER CHOICE</div>
+                    <p class="p"><span class="span">MARGARITA GOSE 3,7</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">M 84</div>
+                    <p class="p"><span class="span">DOPPEL BOCK 7,8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">DOUBLE DOG</div>
+                    <p class="p"><span class="span">DOUBLE IPA 8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">TRIP LOOP</div>
+                    <p class="p"><span class="span">BELGIAN TRIPEL 8,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="group-6">
+                  <div class="overlap-group-8">
+                    <img class="vector-9" src="img/vector-14.svg" />
+                    <div class="text-wrapper-14">EPICA</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">EOLO</div>
+                    <p class="p"><span class="span">PALE ALE4,8</span> <span class="text-wrapper-4">%</span></p>
+                    <div class="text-wrapper-5">GLUTEN FREE</div>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">IPACONDA</div>
+                    <p class="p"><span class="span">AMERICAN IPA 6,6</span> <span class="text-wrapper-4">%</span></p>
+                    <div class="text-wrapper-5">GLUTEN FREE</div>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">BARTENDER CHOICE</div>
+                    <p class="p"><span class="span">MARGARITA GOSE 3,7</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">M 84</div>
+                    <p class="p"><span class="span">DOPPEL BOCK 7,8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">DOUBLE DOG</div>
+                    <p class="p"><span class="span">DOUBLE IPA 8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">TRIP LOOP</div>
+                    <p class="p"><span class="span">BELGIAN TRIPEL 8,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="group-6">
+                  <div class="overlap-group-8">
+                    <img class="vector-10" src="img/vector-6.svg" />
+                    <div class="text-wrapper-14">EVOQE</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">MR. MAGIC</div>
+                    <p class="p"><span class="span">IPA 5,8</span> <span class="text-wrapper-4">%</span></p>
+                    <div class="text-wrapper-5">GLUTEN FREE</div>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">LUCI ROSSE</div>
+                    <p class="p">
+                      <span class="span">FRUIT BERLINER WEISSE W/ MELOGNANO 4,5</span>
+                      <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">EVOQESOUR #3</div>
+                    <p class="p">
+                      <span class="span">SOUR ALE CON MANGO E GUAVA ROSA 5,5</span>
+                      <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">TORTUGA</div>
+                    <p class="p"><span class="span">AMERICAN IPA 6,3</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">FILE NOT FOUND</div>
+                    <p class="p"><span class="span">BOCK 6,8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">ESCAPE</div>
+                    <p class="p"><span class="span">SAISON 5,9</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">FACCIA TOSTA</div>
+                    <p class="p"><span class="span">ORDINARY BITTER 3,8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-14">
+                    <div class="text-wrapper-3">EVOQESOUR#1</div>
+                    <p class="FRUIT-BERLINER">
+                      <span class="text-wrapper-8"
+                        >FRUIT BERLINER WEISSE W/ PASSION FRUIT, BUCCE DI LIMONE E BERGAMOTTO 3,8</span
+                      >
+                      <span class="text-wrapper-9">%</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="group-6">
+                  <div class="overlap-group-8">
+                    <img class="vector-11" src="img/vector-8.svg" />
+                    <div class="text-wrapper-14">FUNKY DROP</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">PLINK</div>
+                    <p class="p"><span class="span">KELLER PILS 4,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">BAD SCOTT</div>
+                    <p class="p">
+                      <span class="span">EXPORT SCOTCH ALE 7,5</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">DOUBLE STRIKE</div>
+                    <p class="p"><span class="span">DDH DOUBLE IPA 8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">FUZZY</div>
+                    <p class="p"><span class="span">GOLDEN STRONG ALE 9</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-14">
+                    <div class="text-wrapper-3">PRSDE&#39;</div>
+                    <p class="div-5">
+                      <span class="text-wrapper-8">SAISON CON SEGALE ASPROMONTANA E BERGAMOTTO FROM RC 6</span>
+                      <span class="text-wrapper-9">%</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="group-7">
+                  <div class="overlap-group-9">
+                    <img class="vector-12" src="img/vector.svg" />
+                    <div class="text-wrapper-2">LA GRAMIGNA</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">PURA VIDA</div>
+                    <p class="p"><span class="span">PILS 5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">SCORRETTA</div>
+                    <p class="p"><span class="span">BOCK 6</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">ILLEGALE</div>
+                    <p class="p"><span class="span">DOUBLE IPA 8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">ENJOY</div>
+                    <p class="p"><span class="span">SESSION IPA 4,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">MAESTOSA</div>
+                    <p class="p"><span class="span">SAISON 6,2</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">ROOFTOP</div>
+                    <p class="p"><span class="span">GOSE 4,3</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="group-8">
+                  <div class="overlap-group-10">
+                    <img class="vector-13" src="img/vector-19.svg" />
+                    <div class="text-wrapper-2">LI PATARNOSCI</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">IPA</div>
+                    <p class="p"><span class="span">INDIA PALE ALE 6</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">CALIFORNIA</div>
+                    <p class="p">
+                      <span class="span">CALIFORNIA COMMON 5,2</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">PILS</div>
+                    <p class="p"><span class="span">PILSNER 4,8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">SAISON</div>
+                    <p class="p"><span class="span">SAISON 6</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">WEISS</div>
+                    <p class="p"><span class="span">WEISS 4,8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">GOLDEN</div>
+                    <p class="p"><span class="span">GOLDEN ALE 4,8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">TERRA D’AMURI</div>
+                    <p class="p"><span class="span">4,8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="group-7">
+                  <div class="overlap-group-9">
+                    <img class="vector-14" src="img/vector-20.svg" />
+                    <div class="text-wrapper-2">LINFA BREWERY</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">REEF</div>
+                    <p class="p"><span class="span">GERMAN PILSNER 5,1</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">SEAHORSE</div>
+                    <p class="p"><span class="span">PALE ALE 4,7</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">MIMMO</div>
+                    <p class="p"><span class="span">IPA 6,2</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">SUGAR ON MY TONGUE</div>
+                    <p class="p"><span class="span">TRIPEL 8,1</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">FIREFLIES</div>
+                    <p class="p"><span class="span">BLANCHE 5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">YUMA</div>
+                    <p class="p">
+                      <span class="span">OATMEAL COFFEE STOUT 5,5</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">PANETTONE SOUR</div>
+                    <p class="p"><span class="span">SOUR ALE 4,3</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">KRUSH</div>
+                    <p class="p"><span class="span">SESSION IPA 4,4</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">HOPPERNAUT</div>
+                    <p class="p"><span class="span">DOUBLE IPA 8,2</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="group-8">
+                  <div class="overlap-group-10">
+                    <img class="vector-15" src="img/vector-17.svg" />
+                    <div class="text-wrapper-2">LZO</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">HOLI</div>
+                    <p class="p"><span class="span">SESSION IPA 3,8</span> <span class="text-wrapper-4">%</span></p>
+                    <div class="text-wrapper-5">GLUTEN FREE</div>
+                  </div>
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">POSA</div>
+                    <p class="p"><span class="span">ITALIAN PILS 4,8</span> <span class="text-wrapper-4">%</span></p>
+                    <div class="text-wrapper-5">GLUTEN FREE</div>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">CIMA</div>
+                    <p class="p"><span class="span">CRAFT LAGER 4,8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">CANDICE</div>
+                    <p class="p"><span class="span">BIANCA 4,2</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">RIOT ALE</div>
+                    <p class="p"><span class="span">CALIFORNIA IPA 5,6</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">DOFFY</div>
+                    <p class="p"><span class="span">DOUBLE IPA 8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">ACID PEPPER</div>
+                    <p class="p">
+                      <span class="span">BERLINER WEISSE W/LIME E PEPE 3,8</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">AXOLOTOL RIFF</div>
+                    <p class="p">
+                      <span class="span">HAZY SESSION IPA 4,2</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">BERGAMOT ROYALE</div>
+                    <p class="p">
+                      <span class="span">TRIPLE W/BERGAMOTTO 7,2</span>
+                      <span class="text-wrapper-4">%</span>
+                      <span class="span">&nbsp;</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">RUSTY</div>
+                    <p class="p">
+                      <span class="span">WEE HEAVY 8</span>
+                      <span class="text-wrapper-4">%</span>
+                      <span class="span">&nbsp;</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">PEACH PRINCESS</div>
+                    <p class="p">
+                      <span class="span">BERLINER WEISSE W/PESCA 3,6</span>
+                      <span class="text-wrapper-4">%</span>
+                      <span class="span">&nbsp;</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">DON’T WORRY, BE HOPPY</div>
+                    <p class="p">
+                      <span class="span">COLD IPA 5,2</span>
+                      <span class="text-wrapper-4">%</span>
+                      <span class="span">&nbsp;</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="MONPIER">
+                <div class="group-9">
+                  <div class="overlap-group-11">
+                    <img class="vector-16" src="img/vector-10.svg" />
+                    <div class="text-wrapper-15">MONPIËR DE GHERDËINA</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">SCILIER</div>
+                    <p class="p"><span class="span">PILS 5</span> <span class="text-wrapper-4">%</span></p>
+                    <div class="text-wrapper-5">GLUTEN FREE</div>
+                  </div>
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">SAS DLA CRUSC</div>
+                    <p class="p"><span class="span">VIENNA 4,6</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">3 CIME</div>
+                    <p class="p"><span class="span">STOUT 5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">VAJOLET</div>
+                    <p class="p"><span class="span">RYE IPA 6,1</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">LOGAN</div>
+                    <p class="p"><span class="span">DOUBLE IPA 8,6</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">WILD LICHTENHAINER</div>
+                    <p class="p"><span class="span">LICHTENHAINER 4,7</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">WILD BERLINER FRAGOLE</div>
+                    <p class="p"><span class="span">BERLINER WEISSE 4,4</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">WILD BERLINER MORE&amp;LAMPONI</div>
+                    <p class="p"><span class="span">BERLINER WEISSE 4,3</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">SAISON A L&#39;ANCIENNE</div>
+                    <p class="p">
+                      <span class="span">WILD FARMHOUSE ALE 7,1</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">SPONTANEUM KRIEK W/ BALLARAK</div>
+                    <p class="p"><span class="span">KRIEK 6,9</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">KAISERSPONTANEUM</div>
+                    <p class="p"><span class="span">SPONTANEUM ALE 9,6</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="group-10">
+                  <div class="overlap-group-12">
+                    <img class="vector-17" src="img/vector-13.svg" />
+                    <div class="text-wrapper-2">ONEI</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">FRISCANZA</div>
+                    <p class="p"><span class="span">PALE ALE 5</span> <span class="text-wrapper-4">%</span></p>
+                    <div class="text-wrapper-5">GLUTEN FREE</div>
+                  </div>
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">MAZZARELLI</div>
+                    <p class="p">
+                      <span class="span">HAZY SESSION IPA 4,2</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">PIRETTU</div>
+                    <p class="p"><span class="span">WEST COAST IPA 6,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">BEE BRIDGE</div>
+                    <p class="p"><span class="span">CALIFORNIA COMMON 7</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">MALAVITA</div>
+                    <p class="p"><span class="span">DOUBLE IPA 8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">CARRUA</div>
+                    <p class="p"><span class="span">MODERN PORTER 5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">CALURA</div>
+                    <p class="p">
+                      <span class="span">IMPERIAL COFFEE STOUT 7,5</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">BERMONDSEY</div>
+                    <p class="p"><span class="span">BEST BITTER 4</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="group-11">
+                  <div class="overlap-group-13">
+                    <img class="vector-18" src="img/vector-4.svg" />
+                    <div class="text-wrapper-2">PASì</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">GOLDEN ALE</div>
+                    <p class="p"><span class="span">GOLDEN ALE 5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">IRISH RED</div>
+                    <p class="p"><span class="span">IRISH RED 7</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">AMBER ALE</div>
+                    <p class="p"><span class="span">AMBER ALE 8,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">PORTER</div>
+                    <p class="p"><span class="span">PORTER 5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="group-7">
+                  <div class="overlap-group-9">
+                    <img class="vector-19" src="img/vector-18.svg" />
+                    <div class="text-wrapper-2">ROCK BREWERY</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">THE ROCK</div>
+                    <p class="p"><span class="span">IPA 6,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">THE END</div>
+                    <p class="p"><span class="span">DOUBLE IPA 8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">POWER UP</div>
+                    <p class="p"><span class="span">AMPLIFIED IPA 6</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">PARANOID</div>
+                    <p class="p"><span class="span">PILSNER 4,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">LA CIAVOLA</div>
+                    <p class="p"><span class="span">WEISS 5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="group-12">
+                  <div class="overlap-group-14">
+                    <img class="vector-20" src="img/vector-16.svg" />
+                    <div class="text-wrapper-2">TERRE A SUD EST</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">GOLDEN ALE</div>
+                    <p class="p"><span class="span">GOLDEN ALE 4,7</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">BLACK IPA</div>
+                    <p class="p"><span class="span">BLACK IPA 6,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">NEW ENGLAND IPA</div>
+                    <p class="p"><span class="span">NEW ENGLAND IPA 7,3</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">RED ALE</div>
+                    <p class="p"><span class="span">RED ALE 5,6</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">AMERICAN PALE ALE</div>
+                    <p class="p">
+                      <span class="span">AMERICAN PALE ALE 5,7</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">BIRRA AL FICO D’INDIA</div>
+                    <p class="p"><span class="span">? 5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="group-7">
+                  <div class="overlap-group-9">
+                    <img class="vector-21" src="img/vector-15.svg" />
+                    <div class="text-wrapper-2">YBLON</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">SMALL WORLD</div>
+                    <p class="p">
+                      <span class="span">BELGIAN PACIFIC IPA 6</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">TAROCCO</div>
+                    <p class="p"><span class="span">HOPPY SAISON 6,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">BADESSA</div>
+                    <p class="p"><span class="span">BELGIAN DUBBEL 7,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">CULOVRA</div>
+                    <p class="p"><span class="span">STRONG ALE 8,5</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">NICA BLONDE</div>
+                    <p class="p"><span class="span">BLONDE 2,7</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">SUPRA</div>
+                    <p class="p"><span class="span">PILSNER 4,8</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="div-2">
+                <div class="group-13">
+                  <div class="overlap-group-13">
+                    <img class="vector-22" src="img/vector-2.svg" />
+                    <div class="text-wrapper-2">24 BARONI</div>
+                  </div>
+                </div>
+                <div class="frame-3">
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">10 PPM</div>
+                    <p class="p"><span class="span">PREMIUM PILSNER 5,6</span> <span class="text-wrapper-4">%</span></p>
+                    <div class="text-wrapper-5">GLUTEN FREE</div>
+                  </div>
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">BIONDA</div>
+                    <p class="p"><span class="span">SAISON 5,6</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-4">
+                    <div class="text-wrapper-3">ROSSA</div>
+                    <p class="p">
+                      <span class="span">BELGIAN AMBER ALE 5,8</span> <span class="text-wrapper-4">%</span>
+                    </p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">NERA</div>
+                    <p class="p"><span class="span">STOUT 7,1</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">BIANCA</div>
+                    <p class="p"><span class="span">BLANCHE BELGA 6,3</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">BIONDA II</div>
+                    <p class="p"><span class="span">CREAM ALE 5,7</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">TERRA</div>
+                    <p class="p"><span class="span">5 CEREALI 6</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                  <div class="frame-5">
+                    <div class="text-wrapper-3">APA</div>
+                    <p class="p"><span class="span">AMERICAN PALE ALE 6</span> <span class="text-wrapper-4">%</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
