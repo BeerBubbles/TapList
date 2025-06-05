@@ -1056,3 +1056,77 @@
   top: 4px;
   left: 0;
 }
+
+/* 1) Azzeriamo padding orizzontale sui blocchi di birrificio */
+.div-2,
+.div-3,
+.MONPIER,
+.DOPPIO-MALTO {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 2) Allineiamo forzatamente tutto in colonna senza spostamenti a sinistra */
+.frame {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 3) Il titolo del birrificio non deve avere margini inferiori */
+.text-wrapper-2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* 4) Rimuoviamo padding o margin-top da .frame-3 (l’elenco delle birre sotto il titolo) */
+.frame-3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* 5) Assicuriamo che ogni riga (.frame-4 / .frame-5) si incolli al bordo sinistro */
+.frame-4,
+.frame-5 {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* 6) Se ci sono ancora spazi indesiderati fra titolo e primo .frame-4/.frame-5, azzeriamo anche i loro margini “esterni” */
+.frame-3 > .frame-4:first-child,
+.frame-3 > .frame-5:first-child {
+  margin-top: 0;
+}
+
+/* 7) (Opzionale) Per mantenere comunque un po’ di “respiro” dall’alto di ciascun birrificio, possiamo aggiungere solo un margin‐bottom al suo contenitore padre */
+.BIRRIFICI .div-2,
+.BIRRIFICI .div-3,
+.MONPIER,
+.DOPPIO-MALTO {
+  margin-bottom: 16px;
+}
+
+span {
+  font-size: 10px !important;
+  line-height: 1.3 !important;
+}
+
+body,
+.iphone,
+.frame,
+.frame-2,
+.frame-3,
+.frame-4,
+.frame-5,
+.div-2,
+.div-3,
+.MONPIER,
+.DOPPIO-MALTO {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Se alcune classi figlie hanno padding residuo, annullalo anch’esse */
+.iphone * {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
