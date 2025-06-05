@@ -6,86 +6,47 @@
   width: 100%;
 }
 
+
+
+
 .iphone .overlap-wrapper {
   background-color: #efefed;
   overflow: hidden;
   width: 393px;
-  height: 5800px;
+  min-height: 8000px;
+  height: auto;
 }
 
 .iphone .overlap {
   position: relative;
-  height: 5798px;
+  min-height: 8000px;
+  height: auto;
   top: 32px;
 }
 
 .iphone .group {
   position: absolute;
   width: 393px;
-  height: 5685px;
+  height: 100%;
   top: 113px;
   left: 0;
   opacity: 0.3;
 }
 
-.iphone .overlap-group {
-  position: absolute;
-  width: 393px;
-  height: 1749px;
-  top: 0;
-  left: 0;
-}
-
-.iphone .sfondo {
-  position: absolute;
-  width: 393px;
-  height: 438px;
-  top: 874px;
-  left: 0;
-}
-
-.iphone .img {
-  top: 1311px;
-  position: absolute;
-  width: 393px;
-  height: 438px;
-  left: 0;
-}
-
-.iphone .sfondo-2 {
-  top: 0;
-  position: absolute;
-  width: 393px;
-  height: 438px;
-  left: 0;
-}
-
-.iphone .sfondo-3 {
-  top: 437px;
-  position: absolute;
-  width: 393px;
-  height: 438px;
-  left: 0;
-}
-
-.iphone .div {
-  position: absolute;
-  width: 393px;
-  height: 1749px;
-  top: 1749px;
-  left: 0;
-}
-
+.iphone .overlap-group,
+.iphone .div,
 .iphone .overlap-group-2 {
   position: absolute;
   width: 393px;
-  height: 1749px;
-  top: 3498px;
+  height: 100%;
   left: 0;
 }
 
+.iphone .sfondo,
+.iphone .img,
+.iphone .sfondo-2,
+.iphone .sfondo-3,
 .iphone .sfondo-4 {
-  top: 5247px;
   position: absolute;
   width: 393px;
   height: 438px;
@@ -1130,3 +1091,5 @@ body,
   padding-left: 0 !important;
   margin-left: 0 !important;
 }
+
+
